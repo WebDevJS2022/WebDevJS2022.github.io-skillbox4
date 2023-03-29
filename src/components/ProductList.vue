@@ -6,17 +6,15 @@
 
 
 <script>
-import ProductItem from './ProductItem.vue';
+import ProductItem from './ProductItem';
 import products from '@/data/products';
 
 export default {
   name: 'ProductList',
   props: ['products'],
-  props: ['ProductItem'],
   components: {ProductItem},
   data() {
         return {
-           products,
            ProductItem
         }
     }
