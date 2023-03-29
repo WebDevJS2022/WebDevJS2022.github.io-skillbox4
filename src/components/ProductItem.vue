@@ -46,10 +46,5 @@ import products from '@/data/products';
   export default {
     name: 'ProductItem',
     props: ['product'],
-    data() {
-        return {
-           products
-        }
-    }
   }
 </script>
