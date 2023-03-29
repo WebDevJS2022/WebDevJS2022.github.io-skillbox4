@@ -1,7 +1,7 @@
 <template>
   <section class="catalog">
         
-  <ProductList :products="product"/>
+  <ProductList :products="products"/>
 
         <ul class="catalog__pagination pagination">
           <li class="pagination__item">
@@ -59,7 +59,14 @@ import products from '@/data/products';
 export default {
   name: 'App',
   props: ['products'],
+  props: ['ProductList'],
   components: {ProductList},
+  data() {
+        return {
+           products,
+           ProductList
+        }
+    }
 };
 </script>
 

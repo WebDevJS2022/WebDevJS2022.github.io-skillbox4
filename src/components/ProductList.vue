@@ -1,8 +1,6 @@
 <template>
     <ul class="catalog__list">
-        <li class="catalog__item">
-            <ProductItem v-for="product in products" :product="product"/>
-        </li>
+        <ProductItem v-for="(product, index) in products" :product="product" :key="index"/>
     </ul>
 </template>
 
@@ -14,6 +12,13 @@ import products from '@/data/products';
 export default {
   name: 'ProductList',
   props: ['products'],
+  props: ['ProductItem'],
   components: {ProductItem},
+  data() {
+        return {
+           products,
+           ProductItem
+        }
+    }
 };
 </script>
