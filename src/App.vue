@@ -1,11 +1,13 @@
 <template>
   <MainPage v-if="currentPage === 'main'" />
   <ProductPage v-else-if="currentPage === 'product'" />
+  <NotFoundPage v-else />
 </template>
 
 <script>
 import MainPage from '@/pages/MainPage.vue';
 import ProductPage from '@/pages/ProductPage.vue';
+import NotFoundPage from '@/pages/NotFoundPage.vue';
 
 export default {
     data() {
@@ -13,8 +15,7 @@ export default {
             currentPage: "main"
         };
     },
-    comments: { MainPage, ProductPage },
-    components: { ProductPage, MainPage }
+    components: { ProductPage, MainPage, NotFoundPage }
 }
 </script>
 
