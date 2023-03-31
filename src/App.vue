@@ -27,7 +27,6 @@
 
 <script>
 import ProductList from '@/components/ProductList.vue';
-import ProductItem from '@/components/ProductItem.vue';
 import products from '@/data/products';
 import BasePagination from '@/components/BasePagination.vue';
 import ProductFilter from '@/components/ProductFilter.vue';
@@ -36,7 +35,6 @@ export default {
   name: 'App',
   components: {
     ProductList,
-    ProductItem,
     BasePagination,
     ProductFilter
   },
