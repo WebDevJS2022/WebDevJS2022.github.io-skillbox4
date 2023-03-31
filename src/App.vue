@@ -1,5 +1,5 @@
 <template>
-  <component :is="currentPageComponent" />
+  <component :is="currentPageComponent" :page-params="currentPageParams" />
 </template>
 
 <script>
@@ -15,7 +15,8 @@ const routes = {
 export default {
     data() {
         return {
-            currentPage: "main"
+            currentPage: "main",
+            currentPageParams: {}
         };
     },
     computed: {

@@ -214,3 +214,9 @@
         </section>
     </main>
 </template>
+
+<script>
+export default {
+    props: ['pageParams']
+}
+</script>
