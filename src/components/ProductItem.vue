@@ -44,7 +44,7 @@
 </template>
 
 <script>
-import eventBus from '@/eventBus';
+import gotoPage from '@/helpers/gotoPage';
 
 export default {
     data(){
@@ -53,9 +53,7 @@ export default {
         };
     },
     methods: {
-        gotoPage(pageName, pageParams){
-            eventBus.$emit('gotoPage', pageName, pageParams);
-        }
+       gotoPage
     },
     name: 'ProductItem',
     props: ['product'],

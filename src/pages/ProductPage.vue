@@ -3,18 +3,18 @@
         <div class="content__top">
             <ul class="breadcrumbs">
                 <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="index.html">
-                        Каталог
+                    <a class="breadcrumbs__link" href="#" @click.prevent="gotoPage('main')">
+                        Catalog
                     </a>
                 </li>
                 <li class="breadcrumbs__item">
-                    <a class="breadcrumbs__link" href="#">
-                        Мобильный транспорт
+                    <a class="breadcrumbs__link" href="#"  @click.prevent="gotoPage('main')">
+                        {{ category.title }}
                     </a>
                 </li>
                 <li class="breadcrumbs__item">
                     <a class="breadcrumbs__link">
-                        Смартфон Xiaomi Mi Mix 3 6/128GB
+                        {{ product.title }}
                     </a>
                 </li>
             </ul>
@@ -216,7 +216,22 @@
 </template>
 
 <script>
+import products from '@/data/products';
+import categories from '@/data/categories';
+import gotoPage from '@/helpers/gotoPage';
+
 export default {
-    props: ['pageParams']
+    props: ['pageParams'],
+    computed: {
+        product(){
+            return products.find(product => product.id === this.pageParams.id);
+        },
+        category(){
+            return categories.find(category => category.id === this.product.categoryId);
+        }
+    },
+    methods: {
+            gotoPage
+        }
 }
 </script>
