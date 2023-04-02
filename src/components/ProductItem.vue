@@ -11,7 +11,7 @@
         </h3>
 
         <span class="catalog__price">
-            {{ product.price }} $
+            {{ product.price | numberFormat }} $
         </span>
 
         <ul class="colors colors--black">
@@ -45,6 +45,7 @@
 
 <script>
 import gotoPage from '@/helpers/gotoPage';
+import numberFormat from '@/helpers/numberFormat';
 
 export default {
     data(){
@@ -57,5 +58,8 @@ export default {
     },
     name: 'ProductItem',
     props: ['product'],
+    filters: {
+        numberFormat
+    },
   }
 </script>
