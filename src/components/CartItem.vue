@@ -11,21 +11,7 @@
             Part number: {{ item.product.id }}
         </span>
 
-        <div class="product__counter form__counter">
-            <button type="button" aria-label="Убрать один товар">
-                <svg width="10" height="10" fill="currentColor">
-                    <use xlink:href="#icon-minus"></use>
-                </svg>
-            </button>
-
-            <input type="text" v-model.number="amount" name="count">
-
-            <button type="button" aria-label="Добавить один товар">
-                <svg width="10" height="10" fill="currentColor">
-                    <use xlink:href="#icon-plus"></use>
-                </svg>
-            </button>
-        </div>
+        <FormCounter v-model="productAmount" :amount="productAmount" />
 
         <b class="product__price">
             {{ (item.amount * item.product.price) | numberFormat }} $
@@ -42,8 +28,18 @@
 <script>
 import numberFormat from '@/helpers/numberFormat';
 import { mapMutations } from 'vuex';
+import gotoPage from '@/helpers/gotoPage';
+import FormCounter from './FormCounter.vue';
 
 export default {
+    components: {
+        FormCounter
+    },
+    data(){
+        return {
+            productAmount: 1
+        };
+    },
     filters: {numberFormat},
     props: ['item'],
     computed: {
@@ -58,6 +54,13 @@ export default {
     },
     methods: {
         ...mapMutations({deleteProduct: 'deleteCartProduct'}),
-    }
+    },
+    gotoPage,
+            addToCart(){
+                this.$store.commit(
+                    'addProductToCart',
+                    {productId: this.product.id, amount: this.productAmount}
+                );
+            }
 }
 </script>
