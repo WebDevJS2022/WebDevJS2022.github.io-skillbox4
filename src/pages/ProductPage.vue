@@ -35,7 +35,7 @@
                     {{ product.title }}
                 </h2>
                 <div class="item__form">
-                    <form class="form" action="#" method="POST">
+                    <form class="form" action="#" method="POST" @submit.prevent="addToCart">
                         <b class="item__price">
                             {{ product.price | numberFormat }} $
                         </b>
@@ -100,21 +100,12 @@
                         </fieldset>
 
                         <div class="item__row">
-                            <div class="form__counter">
-                                <button type="button" aria-label="Убрать один товар">
-                                    <svg width="12" height="12" fill="currentColor">
-                                        <use xlink:href="#icon-minus"></use>
-                                    </svg>
-                                </button>
+                        
+                               
 
-                                <input type="text" value="1" name="count">
+                            <FormCounter v-model="productAmount" :amount="productAmount" />
 
-                                <button type="button" aria-label="Добавить один товар">
-                                    <svg width="12" height="12" fill="currentColor">
-                                        <use xlink:href="#icon-plus"></use>
-                                    </svg>
-                                </button>
-                            </div>
+                         
 
                             <button class="button button--primery" type="submit">
                                 To cart
@@ -195,8 +186,17 @@ import products from '@/data/products';
 import categories from '@/data/categories';
 import gotoPage from '@/helpers/gotoPage';
 import numberFormat from '@/helpers/numberFormat';
+import FormCounter from '@/components/FormCounter.vue';
 
 export default {
+    components: {
+        FormCounter
+    },
+    data(){
+        return {
+            productAmount: 1
+        };
+    },
     filters: {
         numberFormat
     },
@@ -209,7 +209,13 @@ export default {
         }
     },
     methods: {
-            gotoPage
+            gotoPage,
+            addToCart(){
+                this.$store.commit(
+                    'addProductToCart',
+                    {productId: this.product.id, amount: this.productAmount}
+                );
+            }
         }
 }
 </script>
