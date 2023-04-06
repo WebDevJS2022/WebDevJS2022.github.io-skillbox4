@@ -119,61 +119,48 @@
                 <ul class="tabs">
                     <li class="tabs__item">
                         <a class="tabs__link tabs__link--current">
-                            Описание
+                            Description
                         </a>
                     </li>
                     <li class="tabs__item">
                         <a class="tabs__link" href="#">
-                            Характеристики
+                            Characteristics
                         </a>
                     </li>
                     <li class="tabs__item">
                         <a class="tabs__link" href="#">
-                            Гарантия
+                            Guarantee
                         </a>
                     </li>
                     <li class="tabs__item">
                         <a class="tabs__link" href="#">
-                            Оплата и доставка
+                            Payment and delivery
                         </a>
                     </li>
                 </ul>
 
                 <div class="item__content">
                     <p>
-                        Навигация GPS, ГЛОНАСС, BEIDOU Galileo и QZSS<br>
-                        Синхронизация со смартфоном<br>
-                        Связь по Bluetooth Smart, ANT+ и Wi-Fi<br>
-                        Поддержка сторонних приложений<br>
+                        GPS, GLONASS, BEIDOU Galileo and QZSS navigation<br>
+                        Synchronization with your smartphone<br>
+                        Bluetooth Smart, ANT+ and Wi-Fi communication<br>
+                        Support for third-party applications<br>
                     </p>
 
                     <a href="#">
-                        Все характеристики
+                        All characteristics
                     </a>
 
-                    <h3>Что это?</h3>
+                    <h3>What is it?</h3>
 
                     <p>
-                        Wahoo ELEMNT BOLT GPS - это велокомпьютер, который позволяет оптимизировать свои велотренировки,
-                        сделав их максимально эффективными. Wahoo ELEMNT BOLT GPS синхронизируется с датчиками по ANT+,
-                        объединяя полученную с них информацию. Данные отображаются на дисплее, а также сохраняются на
-                        смартфоне. При этом на мобильное устройство можно установить как фирменное приложение, так и
-                        различные приложения сторонних разработчиков. Велокомпьютер точно отслеживает местоположение,
-                        принимая сигнал с целого комплекса спутников. Эта информация позволяет смотреть уже преодоленные
-                        маршруты и планировать новые велопрогулки.
+                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Animi dolorem eveniet maiores optio laborum, soluta adipisci odio dolore debitis labore at repellat cumque reiciendis hic tempore eos aliquam perspiciatis a. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Sit, repellat neque. Placeat aliquam, magni eaque voluptatum incidunt unde tempore, accusamus, aut officia animi esse et! Mollitia ex optio voluptate a.
                     </p>
 
-                    <h3>Дизайн</h3>
+                    <h3>Design</h3>
 
                     <p>
-                    Велокомпьютер Wahoo ELEMNT BOLT очень компактный. Размеры устройства составляют всего 74,6 x 47,3 x
-                    22,1 мм. что не превышает габариты смартфона. Корпус гаджета выполнен из черного пластика.
-                    На обращенной к пользователю стороне расположен дисплей диагональю 56 мм. На дисплей выводятся
-                    координаты и скорость, а также полученная со смартфона и синхронизированных датчиков информация:
-                    интенсивность, скорость вращения педалей, пульс и т.д. (датчики не входят в комплект поставки).
-                    Корпус велокомпьютера имеет степень защиты от влаги IPX7. Это означает, что устройство не боится
-                    пыли, а также выдерживает кратковременное (до 30 минут) погружение в воду на глубину не более
-                    1 метра.
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo quidem quod quae rem optio. Perferendis earum iste debitis incidunt quod veritatis rerum distinctio dignissimos quae enim, obcaecati vitae ipsam ullam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Libero a cupiditate eligendi! Quod magnam quasi quos magni tempora impedit harum, cupiditate voluptas, temporibus, expedita soluta vero enim. Corrupti, odio totam. Lorem ipsum dolor sit amet consectetur, adipisicing elit. Perspiciatis corrupti quaerat provident ullam tempore natus incidunt excepturi quam, magnam minima architecto quo impedit porro fugiat iste! Debitis ex similique doloribus. Lorem ipsum dolor sit amet, consectetur adipisicing elit. Similique molestiae assumenda nihil! Sequi quidem fugiat doloremque, necessitatibus itaque, corrupti dolorum voluptate aspernatur rem accusamus ad, suscipit sit amet in molestiae?
                    </p>
                 </div>
             </div>
