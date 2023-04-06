@@ -48,7 +48,7 @@ export default {
           page: 1,
           productsPerPage: 3,
 
-          productsData: null
+          productsData: null,
         }
     },
     computed: {
@@ -85,7 +85,7 @@ export default {
       },
       countProducts(){
         return this.productsData ? this.productsData.pagination.total : 0;
-      }
+      },
     },
     methods: {
       loadProducts(){
@@ -96,7 +96,7 @@ export default {
     watch: {
       page(){
         this.loadProducts();
-      }
+      },
     },
     created(){
       this.loadProducts();
